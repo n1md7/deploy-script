@@ -1,0 +1,31 @@
+{
+  "name": "deploy-script",
+  "version": "0.0.1",
+  "description": "Server deploy script",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n1md7/deploy-script.git"
+  },
+  "keywords": [
+    "deploy",
+    "script",
+    "apache2",
+    "digital-ocean"
+  ],
+  "author": "n1md7",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/n1md7/deploy-script/issues"
+  },
+  "homepage": "https://github.com/n1md7/deploy-script#readme",
+  "dependencies": {
+    "commander": "^9.5.0",
+    "node-ssh": "^13.0.0",
+    "ssh2": "^1.11.0"
+  }
+}
