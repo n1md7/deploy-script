@@ -2,10 +2,11 @@
   "name": "deploy-script",
   "version": "0.0.1",
   "description": "Server deploy script",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,14 @@
     "commander": "^9.5.0",
     "node-ssh": "^13.0.0",
     "ssh2": "^1.11.0"
-  }
+  },
+  "devDependencies": {
+    "@types/ssh2": "^1.11.7",
+    "prettier": "2.8.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "engineStrict": true
 }
