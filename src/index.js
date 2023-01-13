@@ -110,7 +110,7 @@ async function enableSiteConfiguration(ssh, serverName) {
   const commands = [
     `cd /etc/apache2/sites-available/`,
     `a2ensite ${serverName}.conf`,
-    `a2ensite ${serverName}-ssl.conf`,
+    // `a2ensite ${serverName}-ssl.conf`, // off by default
     'service apache2 restart',
     'echo Apache restarted',
   ].join('\n');
